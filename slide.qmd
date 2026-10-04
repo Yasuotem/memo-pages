@@ -1,0 +1,44 @@
+---
+title: "Quartoで作るPowerPointスライド"
+author: "あなたの名前"
+date: "2026-10-04"
+format: pptx
+---
+
+## 最初のスライド
+
+* Quartoを使えばMarkdownからPowerPointが作れます。
+* 箇条書きもそのまま反映されます。
+
+## Matplotlibのグラフを埋め込む
+
+Pythonの実行結果（グラフ）も自動でスライドに入ります。
+
+```{python}
+#| echo: false
+#| fig-width: 6
+#| fig-height: 4
+
+import matplotlib.pyplot as plt
+
+plt.plot([1,2])
+plt.title("Sample Graph")
+plt.show()
+```
+
+```{mermaid}
+erDiagram
+    USER {
+        int id
+        string username
+        string password_hash
+    }
+
+    TOKEN {
+        int id
+        int user_id
+        datetime expires_at
+    }
+
+    USER ||--o{ TOKEN : "issues"
+```
