@@ -1,0 +1,20 @@
+---
+title: "Quarto Python テスト"
+format: html
+---
+
+## はじめての Quarto
+
+これは Quarto と Python のテストドキュメントです。
+
+```{python}
+import matplotlib.pyplot as plt
+
+# データの作成とプロット
+x = [1, 2, 3, 4]
+y = [10, 20, 25, 30]
+
+plt.plot(x, y, marker='o')
+plt.title("Sample Plot")
+plt.show()
+```
